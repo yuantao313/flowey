@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/rank/rank",
+    "pages/me/me",
+    "pages/logs/logs",
+    "pages/dish/dish",
+    "pages/canteen/canteen",
+    "pages/restaurant/restaurant",
+    "template/item/item"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/icon_management.png",
+        "iconPath": "images/icon_management.png",
+        "pagePath": "pages/index/index",
+        "text": "食堂"
+      },
+      {
+        "selectedIconPath": "images/icon_list.png",
+        "iconPath": "images/icon_list.png",
+        "pagePath": "pages/rank/rank",
+        "text": "排行榜"
+      },
+      {
+        "selectedIconPath": "images/icon_users.png",
+        "iconPath": "images/icon_users.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

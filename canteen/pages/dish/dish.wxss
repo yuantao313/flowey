@@ -1,0 +1,63 @@
+/* pages/dish/dish.wxss */
+.container {
+  padding: 0
+}
+
+.bgpic {
+  width: 100%;
+  height: 300rpx;
+}
+
+.headicon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  background-color: grey;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment{
+  border-top:4rpx solid black;
+  padding:5rpx
+}
+.comment-text {
+  width: 650rpx;
+  justify-content: space-between;
+}
+
+.comment-user {
+  width: 650rpx;
+  justify-content: space-between;
+}
+
+.send {
+  position: fixed;
+  bottom: 150rpx;
+  left: 150rpx;
+  width: 450rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  background-image: linear-gradient(to bottom right, orange, yellow);
+}
+.send text{
+  color:white;
+  font-size: larger;
+  font-weight: bold;
+}

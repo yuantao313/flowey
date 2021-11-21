@@ -1,0 +1,5 @@
+/* pages/canteen/canteen.wxss */
+@import "../../template/item/item.wxss";
+.container{
+  padding:5%
+}

@@ -1,0 +1,23 @@
+<!--pages/dish/dish.wxml-->
+<view class="container">
+  <image class="bgpic" src="{{dish.imgsrc}}" mode="aspectFill"></image>
+  <text>{{dish.name}}</text>
+  <text>{{dish.info}}</text>
+  <view class="comment-container">
+    <view wx:for="{{comments}}" wx:for-item="comment" wx:key="index">
+      <view class="comment column">
+        <view class="comment-user row">
+          <view class="headicon"></view>
+          <text>匿名用户</text>
+        </view>
+        <view class="comment-text row">
+          <text>{{comment.value}}</text>
+          <text>👍{{comment.like}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="send center">
+  <text>攥写评论</text>
+  </view>
+</view>

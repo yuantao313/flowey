@@ -1,0 +1,12 @@
+<!--pages/restaurant/restaurant.wxml-->
+<view>
+  <view class="restaurant container column">
+    <image class="bgpic"
+      src="{{restaurant.imgsrc}}"
+      mode="aspectFill"></image>
+    <view class="container row"><text class="restaurant-name">{{restaurant.name}}</text><text>{{restaurant.info}}</text>
+    </view>
+  </view>
+  <import src="../../template/item/item.wxml"></import>
+  <template is="item" data="{{items:dishes,type:'dish'}}"></template>
+</view>

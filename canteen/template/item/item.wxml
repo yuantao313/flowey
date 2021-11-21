@@ -1,0 +1,16 @@
+<template name="item">
+  <view class="item-container">
+    <view wx:for="{{items}}" wx:for-item="item" wx:key="index">
+      <navigator url="../../pages/{{type}}/{{type}}?id={{item.id}}">
+        <view class="item">
+        <text class="number" wx:if="{{showNumber}}">{{index+1}}</text>
+          <image src="{{item.imgsrc}}" mode="aspectFill"></image>
+          <view class="item-info">
+            <text class="item-name">{{item.name}}</text>
+            <text>{{item.info}}</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</template>

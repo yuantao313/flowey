@@ -1,0 +1,24 @@
+<!--pages/index/index.wxml-->
+<scroll-view class="container">
+  <view class="search-container">
+    <view class="search">
+      <text>搜索</text>
+    </view>
+  </view>
+  <text>所有食堂</text>
+  <view class="canteen-container">
+    <view class="canteen" wx:for="{{canteens}}" wx:for-item="canteen" wx:key="index">
+      <navigator url="../canteen/canteen?id={{canteen.id}}">
+        <view>
+          <text>{{canteen.name}}</text>
+          <text>热度：{{canteen.interest}}</text>
+        </view>
+      </navigator>
+    </view>
+
+  </view>
+  <text>猜你喜欢</text>
+
+  <import src="../../template/item/item.wxml"></import>
+  <template is="item" data="{{items:recommendations,type:'restaurant'}}"></template>
+</scroll-view>

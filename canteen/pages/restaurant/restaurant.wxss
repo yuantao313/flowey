@@ -1,0 +1,26 @@
+/* pages/restaurant/restaurant.wxss */
+@import '../../template//item/item.wxss';
+.bgpic {
+  width: 100%;
+  height: 300rpx;
+}
+
+.restaurant-name {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding:0
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}

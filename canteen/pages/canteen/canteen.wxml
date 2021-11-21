@@ -1,0 +1,8 @@
+<!--pages/canteen/canteen.wxml-->
+<view class="container">
+<view>
+</view>
+<import src="../../template/item/item.wxml">
+</import>
+<template is="item" data="{{items:restaurants,type:'restaurant'}}"></template>
+</view>
